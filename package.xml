@@ -111,59 +111,5 @@
         <members>einsteinlogo_JJR</members>
         <name>StaticResource</name>
     </types>
-    <types>
-        <members>Analytics_for_Insurance</members>
-        <members>Zurich_Risk_Profiling</members>
-        <name>WaveApplication</name>
-    </types>
-    <types>
-        <members>Claims</members>
-        <members>Customer_Interactions</members>
-        <members>My_Book_of_Business</members>
-        <members>My_Clients2</members>
-        <members>My_Households</members>
-        <members>Renewals_and_Cancelations</members>
-        <members>Risk_Profile_Bullets_Embedded</members>
-        <members>TEST</members>
-        <name>WaveDashboard</name>
-    </types>
-    <types>
-        <members>Activities_KR</members>
-        <members>Claims_KR</members>
-        <members>Clients</members>
-        <members>Clients_KR</members>
-        <members>Coverages</members>
-        <members>Earnings_Fees_Data</members>
-        <members>Financial_Accounts_KR</members>
-        <members>Goals_KR</members>
-        <members>Insurance_Policies_KR</members>
-        <members>Insurance_Profiles_KR</members>
-        <members>Insurance_Renewal</members>
-        <members>Reps4</members>
-        <members>Risk_Profile_Bullets</members>
-        <members>TransactionsRecord</members>
-        <members>Trended_Metrics_KR</members>
-        <members>Zurich_Risk_Profile_Data</members>
-        <members>activity</members>
-        <members>clients_households</members>
-        <members>deals</members>
-        <members>goal_trending</members>
-        <members>goal_trending3</members>
-        <members>goals</members>
-        <members>snapshot_products</members>
-        <members>transactions_data</members>
-        <name>WaveDataset</name>
-    </types>
-    <types>
-        <members>Claims</members>
-        <members>Customer_Interactions</members>
-        <members>My_Book_of_Business</members>
-        <members>My_Clients2</members>
-        <members>My_Households</members>
-        <members>Renewals_and_Cancelations</members>
-        <members>Risk_Profile_Bullets_Embedded</members>
-        <members>TEST</members>
-        <name>WaveXmd</name>
-    </types>
     <version>45.0</version>
 </Package>
