@@ -1,0 +1,11 @@
+<design:component >
+	<design:attribute name="objectname" label="Object Name" description="Please input the API name of the object where you intend to add this component to the page layout such as Case or JackCustomObject__c" />
+  <design:attribute name="booleanfield" label="Checkbox to Toggle Insights" description="Please input the API name of the field such as JacksCheckbox__c which will be used to determine which insights to display in your component so that insights can change in the midst of your demo to look more realistic." />
+  <design:attribute name="insightlabel" label="Label of Main Insight" description="This will be the label at the very top of the component like Likelihood to Convert or Predicted Days to Close" />
+  <design:attribute name="insightValueIfTrue" label="Insight Value if Checkbox True" description="This will be the value of the insight if the checkbox defined above is true" />
+  <design:attribute name="leadingCausesIfTrue" label="Leading Causes if Checkbox True" description="Please enter your leading causes in a comma separated list.  Everything before the first space in factor will be treated as the value while everything after is the label." />
+  <design:attribute name="howToImproveIfTrue" label="How to Improve if Checkbox True" description="Please enter your how to improve items in a comma separated list.  Everything before the first space in factor will be treated as the value while everything after is the label." />
+  <design:attribute name="insightValueIfFalse" label="Insight Value if Checkbox False" description="This will be the value of the insight if the checkbox defined above is false" />
+  <design:attribute name="leadingCausesIfFalse" label="Leading Causes if Checkbox False" description="Please enter your leading causes in a comma separated list.  Everything before the first space in factor will be treated as the value while everything after is the label." />
+  <design:attribute name="howToImproveIfFalse" label="How to Improve if Checkbox False" description="Please enter your how to improve items in a comma separated list.  Everything before the first space in factor will be treated as the value while everything after is the label." />
+</design:component>

@@ -1,0 +1,29 @@
+.THIS div#container {
+    margin: 0;
+    background-color:white;
+}
+.THIS .ac-sdd-background-color--grey {
+    background-color: #f4f6f9;
+}
+.THIS .slds-text-heading--medium {
+    font-size:14px;
+}
+.THIS .slds-item--detail{
+    font-size:12px;
+}
+.THIS .ac-sdd-left-col {
+    width: 20% !important;
+}
+.THIS .ac-sdd-right-col {
+    width: 80% !important;
+    white-space: normal !important;
+}
+.THIS #csat_label.ac-sdd-right-col {
+    width: 90% !important;
+}
+.THIS #csat_label{
+    margin-top:10px;
+}
+.THIS .one {
+    margin-left: 25px;
+}

@@ -1,0 +1,5 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+    <div id="sm_section" style="width:100%; text-align:center">
+        <div class="slds-button slds-button_neutral" style="width: 100%!important;background: #1172cf;border-color: #1172cf;height: 50px;font-weight: 600;color: white;padding: 10px;font-size: initial;" onclick="{! c.handleClick }">Search more articles</div>	
+    </div>
+</aura:component>

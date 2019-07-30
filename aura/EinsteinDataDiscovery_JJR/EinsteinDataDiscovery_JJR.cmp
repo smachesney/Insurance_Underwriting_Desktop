@@ -1,0 +1,74 @@
+<aura:component controller="EDDJJR" implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="objectname" type="String" default="Case" access="global"/>
+    <aura:attribute name="booleanfield" type="String" default="IsEscalated" access="global"/>
+    <aura:attribute name="insightlabel" type="String" default="Chance to be reopened" access="global"/>
+    <aura:attribute name="insightValueIfTrue" type="String" default="30" access="global"/>
+    <aura:attribute name="leadingCausesIfTrue" type="String" default="18% Because is escalated, 12% Because customer has history of reopening" access="global"/>
+    <aura:attribute name="howToImproveIfTrue" type="String" default="11% Reach out to customer via phone prior to closing" access="global"/>
+    <aura:attribute name="insightValueIfFalse" type="String" default="12" access="global"/>
+    <aura:attribute name="leadingCausesIfFalse" type="String" default="12% Because customer has history of reopening" access="global"/>
+    <aura:attribute name="howToImproveIfFalse" type="String" default="" access="global"/>
+
+    
+    
+    <ltng:require styles="/resource/SLDS0120_JJR/assets/styles/salesforce-lightning-design-system-ltng.css" />
+    <ltng:require scripts="/resource/jqueryjs_JJR" afterScriptsLoaded="{!c.doInit}"/>
+    
+    <aura:handler event="force:refreshView" action="{!c.doInit}" />
+
+    <div class="slds">
+        <div id='container'>
+            <div class="slds-grid slds-wrap slds-grid--pull-padded slds-theme--shade" style="margin-bottom: 20px;margin-left: 0px; margin-right: 0px;">
+                <div class="slds-size--1-of-1 slds-grid slds-nowrap slds-grid--vertical-align-end slds-p-vertical--medium slds-p-horizontal--small" style="height: 65px;">
+                    <span data-aura-rendered-by="3075:0" class="uiImage" data-aura-class="uiImage">
+                    	<img src="{!$Resource.einsteinlogo_JJR}" class="einstein-header-icon" style="margin-top:-5px;"/>
+                    </span>
+                    
+                    
+                    <div id='csat' class='slds-item--label ac-sdd-left-col slds-text-heading--large slds-p-left--large slds-text-color--weak font-weight-bold ac-sdd-text-color--red'/>
+                      <div id='csat_label' class='ac-sdd-right-col slds-text-heading--medium slds-text-title--caps slds-text-color--weak slds-p-left--small one' style='padding-left:1em;'>
+                                 {!v.insightlabel}
+                      </div> 
+                </div>
+            </div>
+            <div class="slds-grid slds-wrap slds-grid--pull-padded  slds-p-vertical--small">
+             
+            <div class="slds-size--1-of-1 slds-grid slds-nowrap slds-grid--vertical-align-end slds-p-vertical--x-small slds-p-horizontal--small">
+                <div class='slds-text-heading--medium slds-text-title--caps slds-text-color--weak slds-p-horizontal--medium'>
+                   Leading Causes
+                </div>
+            </div>
+            <div class="slds-size--1-of-1 slds-grid slds-nowrap slds-grid--vertical-align-end slds-p-vertical--x-small slds-p-horizontal--small">
+                <div id='leadingCauses' class="slds-list--horizontal slds-wrap slds-m-horizontal--large" style="width:70%;">
+                    <div class='slds-text-body--regular slds-text-color--weak'>
+                        No causes detected
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slds-border--bottom slds-m-horizontal--medium" />
+        <div class="slds-grid slds-wrap slds-grid--pull-padded  slds-p-vertical--small">
+            <div class="slds-size--1-of-1 slds-grid slds-nowrap slds-grid--vertical-align-end slds-p-vertical--x-small slds-p-horizontal--small">
+                <div class='slds-text-heading--medium slds-text-title--caps slds-text-color--weak slds-p-horizontal--medium'>
+                    How to Improve This
+                </div>
+            </div>
+            <div class="slds-size--1-of-1 slds-grid slds-nowrap slds-grid--vertical-align-end slds-p-vertical--x-small slds-p-horizontal--small">
+                <div id='recommendedImprovements' class="slds-list--horizontal slds-wrap slds-m-horizontal--large" style="width:70%;">
+                    <div class='slds-text-body--regular slds-text-color--weak'>
+                        No recommendations detected
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        </div> 
+        
+        
+        
+    </div>
+    
+    
+    
+</aura:component>
